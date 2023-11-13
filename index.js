@@ -1,4 +1,6 @@
-const http = require("http")
+const http = require("http");
+const { env } = require("process");
+require('dotenv').config();
 
 const requestController = () => {
   console.log("Recibimos nueva requestttttt")
@@ -6,4 +8,6 @@ const requestController = () => {
 
 const server = http.createServer(requestController)
 
-server.listen(3000)
+const PORT = process.env.PORT
+
+server.listen(3000,() => {console.log("Aplicacion corriendo en el puerto " + PORT)})
