@@ -5,6 +5,9 @@
   "author": "VictorSuarez17 <vichormanuel@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
   "devDependencies": {
     "nodemon": "^3.0.1"
   }

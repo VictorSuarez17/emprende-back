@@ -1,7 +1,7 @@
 const http = require("http")
 
 const requestController = () => {
-  console.log({global})
+  console.log("Recibimos nueva requestttttt")
 }
 
 const server = http.createServer(requestController)
